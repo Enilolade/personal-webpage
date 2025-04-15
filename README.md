@@ -28,4 +28,4 @@ The webpage is built using semantic HTML tags such as header, main, section, and
 
 Before coding, I designed the layout of my site in Canva. This was my first time designing before developing, and it helped me choose colors, structure the layout, and visualise the final result. It made the coding process more efficient and enjoyable.
 
-[Live Site](https://www.example.com)
+[Live Site](https://enilolade.github.io/personal-webpage/)
