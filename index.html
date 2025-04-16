@@ -18,7 +18,7 @@
         <img
           class="profile-picture"
           src="./images/profile-picture.jpg"
-          alt="profile picture"
+          alt="profile picture of Eniola"
         />
       </div>
     </header>
@@ -67,20 +67,26 @@
             <h2>Contact Me</h2>
             <div class="form-container">
               <form action="/" method="post">
-                <input
-                  type="text"
-                  name="fullname"
-                  id="fullname"
-                  placeholder="Full Name"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email Address"
-                  required
-                />
+                <div class="input-container fullname-box">
+                  <label class="label" for="fullname">Full Name</label>
+                  <input
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    placeholder="e.g. Eniola Yussuff"
+                    required
+                  />
+                </div>
+                <div class="input-container email-box">
+                  <label class="label" for="email">Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="e.g. eniola@example.com"
+                    required
+                  />
+                </div>
                 <textarea name="message" id="message"></textarea>
                 <button type="submit">Send Message</button>
               </form>

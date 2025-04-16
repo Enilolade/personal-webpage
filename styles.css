@@ -98,9 +98,23 @@ form {
   padding: 1rem;
 }
 
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  color: #dde3e4;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 #fullname,
 #email {
+  font-size: 12px;
   padding: 0.3rem;
+  min-width: 60%;
 }
 
 #message {
@@ -113,8 +127,8 @@ button {
   color: #535a3b;
   font-size: 12px;
   font-weight: 700;
-  padding: 0.5em 0;
-  width: 40%;
+  padding: 0.5em 0.7em;
+  max-width: 150px;
 }
 
 button:hover {
@@ -139,10 +153,6 @@ button:hover {
 @media screen and (min-width: 768px) {
   .container {
     padding: 2em 3.25em;
-  }
-
-  button {
-    width: 20%;
   }
 }
 
@@ -181,9 +191,5 @@ button:hover {
 
   #message {
     padding: 2.5rem 0;
-  }
-
-  button {
-    width: 30%;
   }
 }
