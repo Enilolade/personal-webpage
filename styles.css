@@ -11,11 +11,17 @@ body {
   gap: 1rem;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  position: relative;
 }
 
 header {
   background-color: #535a3b;
   text-align: center;
+}
+
+header,
+footer {
+  flex-shrink: 0;
 }
 
 .image-container {
@@ -28,10 +34,21 @@ header {
   height: 100px;
   margin-top: 2rem;
   width: 100px;
+  transition: width 1s ease, height 1s ease;
+}
+
+.profile-picture:hover {
+  width: 120px;
+  height: 120px;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .container {
   padding: 2em;
+  position: relative;
 }
 
 .container,
@@ -128,7 +145,8 @@ button {
   font-size: 12px;
   font-weight: 700;
   padding: 0.5em 0.7em;
-  max-width: 150px;
+  max-width: 200px;
+  transition: background-color 1s ease, color 1s ease;
 }
 
 button:hover {
@@ -137,10 +155,16 @@ button:hover {
   cursor: pointer;
 }
 
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
 .footer-container {
   background-color: #535a3b;
   color: #dde3e4;
-  padding: 1rem 2.5rem;
+  padding: 0.5rem 2.5rem;
   text-align: center;
 }
 
@@ -157,11 +181,6 @@ button:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  .profile-picture {
-    width: 120px;
-    height: 120px;
-  }
-
   .container {
     flex-direction: row;
     gap: 4rem;
@@ -191,5 +210,45 @@ button:hover {
 
   #message {
     padding: 2.5rem 0;
+  }
+
+  footer {
+    position: fixed;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container .headings {
+    font-size: 230%;
+  }
+  .container p {
+    font-size: 150%;
+  }
+
+  .skills-table {
+    height: 10rem;
+  }
+  .skills-table th {
+    font-size: 140%;
+  }
+
+  .skills-table * {
+    font-size: 110%;
+  }
+
+  form {
+    height: 25rem;
+    justify-content: space-evenly;
+  }
+
+  .label,
+  #fullname,
+  #email {
+    font-size: 150%;
+  }
+
+  button {
+    font-size: 120%;
+    padding: 1rem 0.7rem;
   }
 }
